@@ -5,11 +5,13 @@ package ve.com.gem.model.entity;
 
 import java.sql.Timestamp;
 
+import javax.persistence.Embeddable;
+
 /**
  * @author informatica
  *
  */
-//@Embeddable
+@Embeddable
 public class Basic {
 
 	private String name;
