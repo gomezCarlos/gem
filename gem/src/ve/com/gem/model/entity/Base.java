@@ -1,20 +1,16 @@
-/**
- * 
- */
 package ve.com.gem.model.entity;
 
 import java.sql.Timestamp;
 
-/**
- * @author informatica
- *
- */
-public class Basic {
-
+public abstract class Base {
+	
 	private String name;
 	private String description;
-	private Timestamp created;
-	private Timestamp updated;
+	
+	private Timestamp createdAt;
+	private Timestamp updatedAt;
+	private Timestamp deletedAt;
+	
 	private Boolean isActive;
 	public String getName() {
 		return name;
@@ -28,28 +24,15 @@ public class Basic {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public Timestamp getCreated() {
-		return created;
-	}
-	public void setCreated(Timestamp created) {
-		this.created = created;
-	}
-	public Timestamp getUpdated() {
-		return updated;
-	}
-	public void setUpdated(Timestamp updated) {
-		this.updated = updated;
-	}
 	public Boolean getIsActive() {
 		return isActive;
 	}
 	public void setIsActive(Boolean isActive) {
 		this.isActive = isActive;
 	}
-	
+
 	@Override
 	public String toString() {
-		
-		return this.name;
+		return name;
 	}
 }
