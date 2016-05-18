@@ -6,12 +6,11 @@ public abstract class Base {
 	
 	private String name;
 	private String description;
-	
 	private Timestamp createdAt;
 	private Timestamp updatedAt;
 	private Timestamp deletedAt;
-	
 	private Boolean isActive;
+	
 	public String getName() {
 		return name;
 	}
@@ -31,6 +30,24 @@ public abstract class Base {
 		this.isActive = isActive;
 	}
 
+	public Timestamp getCreatedAt() {
+		return createdAt;
+	}
+	public void setCreatedAt(Timestamp createdAt) {
+		this.createdAt = createdAt;
+	}
+	public Timestamp getUpdatedAt() {
+		return updatedAt;
+	}
+	public void setUpdatedAt(Timestamp updatedAt) {
+		this.updatedAt = updatedAt;
+	}
+	public Timestamp getDeletedAt() {
+		return deletedAt;
+	}
+	public void setDeletedAt(Timestamp deletedAt) {
+		this.deletedAt = deletedAt;
+	}
 	@Override
 	public String toString() {
 		return name;
