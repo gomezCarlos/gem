@@ -10,7 +10,8 @@ import com.google.common.collect.Lists;
 import ve.com.gem.model.entity.Company;
 import ve.com.gem.model.repository.ICompanyRepository;
 import ve.com.gem.model.service.ICompanyService;
-//Created by Andres & Ronaldo Team (4)
+/** Created by Andres & Ronaldo Team (4)
+*/
 
 @Service
 public class CompanyService implements ICompanyService {

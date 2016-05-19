@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import ve.com.gem.model.entity.Company;
 import ve.com.gem.model.service.ICompanyService;
-//Created by Andres & Ronaldo Team (4)
-
+/** Created by Andres & Ronaldo Team (4)
+*/
 @RestController
 @RequestMapping(value = "/companies")
 public class CompanyController {

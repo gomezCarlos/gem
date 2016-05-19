@@ -4,7 +4,8 @@ import java.util.List;
 
 import ve.com.gem.model.entity.Company;
 
-//Created by Andres & Ronaldo Team (4)
+/** Created by Andres & Ronaldo Team (4)
+*/
 public interface ICompanyService {
 
 		List<Company> findAll();

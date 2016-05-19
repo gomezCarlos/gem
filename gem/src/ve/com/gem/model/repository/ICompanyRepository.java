@@ -5,7 +5,8 @@ import java.util.List;
 import org.springframework.data.repository.CrudRepository;
 
 import ve.com.gem.model.entity.Company;
-//Created by Andres & Ronaldo Team (4)
+/** Created by Andres & Ronaldo Team (4)
+*/
 
 public interface ICompanyRepository extends CrudRepository<Company, Long> {
 

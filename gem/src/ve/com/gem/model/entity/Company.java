@@ -5,10 +5,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-//Created by Andres & Ronaldo Team (4)
-
+/** Created by Andres & Ronaldo Team (4)
+*/
 @Entity
-public class Company {
+public class Company extends Base {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
