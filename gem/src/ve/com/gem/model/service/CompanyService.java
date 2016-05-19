@@ -38,8 +38,8 @@ public class CompanyService implements ICompanyService {
 	}
 
 	@Override
-	public void addByName(String name) {
-		companyRepository.save(new Company(new Integer(companies.size()+1).longValue(),name));
+	public void addByName(String customer) {
+		companyRepository.save(new Company(new Integer(companies.size()+1).longValue(),customer));
 		//personas.add(new Persona(new Integer(personas.size()+1).longValue(),name));
 		
 	}
