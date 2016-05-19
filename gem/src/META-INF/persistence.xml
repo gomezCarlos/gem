@@ -3,11 +3,13 @@
 	<persistence-unit name="gem">
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 		<class>ve.com.gem.model.entity.Base</class>
+		<class>ve.com.gem.model.entity.Company</class>
 		<class>ve.com.gem.model.entity.Gem</class>
 		<class>ve.com.gem.model.entity.Goal</class>
 		<class>ve.com.gem.model.entity.Risk</class>
 		<class>ve.com.gem.model.entity.RiskLevel</class>
 		<class>ve.com.gem.model.entity.RiskType</class>
+		<class>ve.com.gem.model.entity.Valoration</class>
 		
 		<properties>
 			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
