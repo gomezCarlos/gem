@@ -2,15 +2,44 @@ package ve.com.gem.model.entity;
 
 import java.sql.Timestamp;
 
-public abstract class Base {
-	
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+import org.springframework.stereotype.Component;
+
+@Entity
+public class Base {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY) 
+	private Long id;
+	@Column
 	private String name;
+	@Column
 	private String description;
+	@Column
 	private Timestamp createdAt;
+	@Column
 	private Timestamp updatedAt;
+	@Column
 	private Timestamp deletedAt;
+	@Column
 	private Boolean isActive;
 	
+	public Base(){}
+	
+	public Base(String name, String description, Timestamp createdAt, Timestamp updatedAt, Timestamp deletedAt,
+			Boolean isActive) {
+		super();
+		this.name = name;
+		this.description = description;
+		this.createdAt = createdAt;
+		this.updatedAt = updatedAt;
+		this.deletedAt = deletedAt;
+		this.isActive = isActive;
+	}
 	public String getName() {
 		return name;
 	}
@@ -52,4 +81,13 @@ public abstract class Base {
 	public String toString() {
 		return name;
 	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+	
 }
