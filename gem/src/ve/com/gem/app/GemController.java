@@ -25,7 +25,7 @@ public class GemController {
 		return gems;
 	}
 	
-	@RequestMapping(value="/save",method=RequestMethod.GET, produces = "application/json; charset=UTF-8")
+	@RequestMapping(value="/save",method=RequestMethod.POST, produces = "application/json; charset=UTF-8")
 	public ResponseEntity<Gem> save(@RequestBody Gem gem)
 	{
 		gemService.save(gem);
