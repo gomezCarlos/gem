@@ -13,7 +13,7 @@ import ve.com.gem.model.service.ICompanyService;
 //Created by Andres & Ronaldo Team (4)
 
 @RestController
-@RequestMapping(value = "/gem")
+@RequestMapping(value = "/companies")
 public class CompanyController {
 @Autowired
 ICompanyService companyService;
