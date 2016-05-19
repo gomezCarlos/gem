@@ -17,6 +17,7 @@ public class Company {
 	private String customer;
 	public Company(long longValue, String name2) {
 		// TODO Auto-generated constructor stub
+	
 	}
 	public Long getId() {
 		return id;
@@ -36,4 +37,6 @@ public class Company {
 	public void setCustomer(String customer) {
 		this.customer = customer;
 	}
+	public Company() {
+}
 }
