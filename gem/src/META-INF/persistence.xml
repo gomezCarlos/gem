@@ -4,6 +4,7 @@
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 		<class>ve.com.gem.model.entity.Base</class>
 		<class>ve.com.gem.model.entity.Company</class>
+		<class>ve.com.gem.model.entity.Document</class>
 		<class>ve.com.gem.model.entity.Gem</class>
 		<class>ve.com.gem.model.entity.Goal</class>
 		<class>ve.com.gem.model.entity.Risk</class>
